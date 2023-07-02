@@ -1,4 +1,4 @@
-import { Directive, HostBinding, Input } from "@angular/core";
+import { Directive, HostBinding, HostListener, Input } from "@angular/core";
 
 @Directive({
   selector: '[highlight]'
@@ -20,5 +20,15 @@ export class HighlightDirective {
   @HostBinding('attr.disabled')
   get disabled() {
     return "true"
+  }
+
+  @HostListener("mouseover")
+  mouseOver() {
+    this.isHighlight = false;
+  }
+
+  @HostListener("mouseleave")
+  mouseLeave() {
+    this.isHighlight = true;
   }
 }
