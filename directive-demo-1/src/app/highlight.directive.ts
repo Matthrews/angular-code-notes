@@ -9,8 +9,8 @@ export class HighlightDirective {
     console.log('Directive created...');
   }
 
-  @HostBinding('className')
+  @HostBinding('class.highlight-card')
   get xYZ() {
-    return 'card highlight-card'
+    return true
   }
 }
