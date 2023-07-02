@@ -1,16 +1,19 @@
-import { Directive, HostBinding } from "@angular/core";
+import { Directive, HostBinding, Input } from "@angular/core";
 
 @Directive({
   selector: '[highlight]'
 })
 
 export class HighlightDirective {
+  @Input('highlight')
+  isHighlight = false;
+
   constructor() {
     console.log('Directive created...');
   }
 
   @HostBinding('class.highlight-card')
   get xYZ() {
-    return true
+    return this.isHighlight
   }
 }

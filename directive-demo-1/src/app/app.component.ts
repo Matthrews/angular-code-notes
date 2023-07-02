@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'directive-demo-1';
   authProfile = [ { r: 'admin_config', a: ['view'] } ]
+  highlighted = true;
 }
