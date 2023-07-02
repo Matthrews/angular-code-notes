@@ -1,7 +1,8 @@
 import { Directive, EventEmitter, HostBinding, HostListener, Input, Output } from "@angular/core";
 
 @Directive({
-  selector: '[highlight]'
+  selector: '[highlight]',
+  exportAs: 'hl'
 })
 
 export class HighlightDirective {
@@ -35,6 +36,12 @@ export class HighlightDirective {
   @HostListener("mouseleave")
   mouseLeave() {
     this.isHighlight = true;
+    this.toggleHighlight.emit(this.isHighlight)
+  }
+
+  toggle() {
+    this.isHighlight = !this.isHighlight;
+    console.log('toggle runs...');
     this.toggleHighlight.emit(this.isHighlight)
   }
 }

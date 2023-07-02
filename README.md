@@ -39,3 +39,9 @@ use `ng-container` instead, `ng-container` doesn't create extra elements
 ![Alt text](image-13.png)
 ![Alt text](image-14.png)
 ![Alt text](image-16.png)
+
+## Tha Angular Directive
+
+- @HostBinding
+- @HostListener
+- Export as directive instance reference, in which way you can access public properties and methods
