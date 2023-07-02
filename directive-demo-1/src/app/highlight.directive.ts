@@ -16,4 +16,9 @@ export class HighlightDirective {
   get xYZ() {
     return this.isHighlight
   }
+
+  @HostBinding('attr.disabled')
+  get disabled() {
+    return "true"
+  }
 }
