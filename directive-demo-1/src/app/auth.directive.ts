@@ -19,7 +19,7 @@ export class AuthDirective {
       this.status = 'Pending'
       this.authService.fetchAuthProfile().subscribe((ret) => {
         this.status = 'Resolved'
-        if (ret) {
+        if (!ret) {
           this.viewContainerRef.createEmbeddedView(this.templateRef);
         } else {
           this.viewContainerRef.clear()
