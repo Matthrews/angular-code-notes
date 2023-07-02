@@ -45,3 +45,36 @@ use `ng-container` instead, `ng-container` doesn't create extra elements
 - @HostBinding
 - @HostListener
 - Export as directive instance reference, in which way you can access public properties and methods
+
+## Tha Angular Star Syntax
+
+![Alt text](image-17.png)
+
+Under the hood
+![Alt text](image-15.png)
+
+Write custom star syntax `ngxUnless`
+
+## Tha Angular View Encapsulation Under the Hood
+
+:host, ::ng-deep
+
+with `::ng-deep` to remove `_ngcontent-c1` attributes
+
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
+
+![Alt text](image-20.png)
+
+![Alt text](image-21.png)
+
+*Default vs Shadow DOM*
+
+![Alt text](image-22.png)
+
+- ViewEncapsulation.Emulated(default)
+
+- ViewEncapsulation.None
+
+- ViewEncapsulation.ShadowDom
