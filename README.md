@@ -78,3 +78,14 @@ with `::ng-deep` to remove `_ngcontent-c1` attributes
 - ViewEncapsulation.None
 
 - ViewEncapsulation.ShadowDom
+
+## Angular Injectable Services
+
+![Alt text](image-25.png)
+![Alt text](image-24.png)
+![Alt text](image-23.png)
+
+*Custom Service to fetch data*
+
+![Alt text](image-27.png)
+![Alt text](image-28.png)
